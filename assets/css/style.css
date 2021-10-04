@@ -5,10 +5,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
+    overflow-x: hidden;
 }
 
 .container{
-    width: 100vw;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -27,13 +28,19 @@
     display: flex;
     text-shadow: 1px 1px 1px rgb(121, 121, 121);
 }
-.text-top .bold{
+.bold{
     margin:0 5px;
     font-weight: bold;
 }
-menu{
+.menu-area{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-area-link{
     display: flex;
     align-items: flex-end;
+    padding-bottom: 7px ;
 }
 .logo{
     margin: 16px;
@@ -41,13 +48,17 @@ menu{
     font-weight: 700;
     color: #00cbf8;
     cursor: pointer;
+    word-spacing: 1px;
 }
 .menu{
+    height: 80px;
+    margin: 0 50px;
     list-style: none;
     display: flex;
+    align-items: center;
+    gap: 46px;
 }
 .menu li{
-    margin: 30px;
     font-size: 14px;
     color: #3e4457;
     font-weight: 500;
@@ -56,9 +67,21 @@ menu{
 .menu li:hover{
     color: #00cbf8;
 }
+.menu-area-user{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0 30px;
+    padding-top: 5px ;
+}
+.menu-area-user input{
+    display: none;
+}
+.menu-area-user img{
+    width: 24px;
+}
 .banner1{
-    width: 100vw;
-    height: 418px;
     background-color: #f0f0f0;
 }
 .text{
@@ -66,4 +89,53 @@ menu{
     font-weight: 700;
     color: #343434;
     margin: 18px 0;
+}
+.products{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.prod{
+    width: 254px;
+    height: 460px;
+    margin: 8px;
+    border: 2px solid #CCC;
+    border-radius: 20px;
+/*     display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+.prod img{
+    height: 210px;
+    margin: 10px 20px;
+}
+
+.prod .info{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.prod .prod-name{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.prod1 .prod-name{
+    color: #c4e315;
+}
+.prod2 .prod-name{
+    color: #00cbf8;
+}
+.prod3 .prod-name{
+    color: #fc03c2;
+}
+.prod4 .prod-name{
+    color: #ff5669;
+}
+.prod .desc{
+    padding: 5px 15px;
+}
+.value{
+    display: flex;
+    padding: 5px 15px;
 }

@@ -139,3 +139,11 @@
     display: flex;
     padding: 5px 15px;
 }
+.footer-gray{
+    background-color: #f0f0f0;
+    width: 100vw;
+    height: 198px;
+}
+.footer-white{
+    height: 114px;
+}

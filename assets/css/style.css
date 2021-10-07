@@ -96,14 +96,15 @@
     margin-top: 30px;
 }
 .prod{
-    width: 254px;
-    height: 460px;
+    width: 255px;
+    height: 470px;
     margin: 8px;
     border: 2px solid #CCC;
     border-radius: 20px;
-/*     display: flex;
+    cursor: pointer;
+    display: flex;
     flex-direction: column;
-    align-items: center; */
+    justify-content: space-between;
 }
 .prod img{
     height: 210px;
@@ -134,16 +135,121 @@
 }
 .prod .desc{
     padding: 5px 15px;
+    line-height: 16px;
+    color: #3e4457;
+    font-size: 14px;
 }
 .value{
     display: flex;
     padding: 5px 15px;
+    color: #514d61;
+}
+.value p{
+    font-size: 16px;
+}
+.btns-prod{
+    width: inherit;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.btn-saiba{
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color:#00cbf8;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn-saiba:hover{
+    background-color: #046daf;
+}
+.btn-cart{
+    width: 60px;
+    height: 40px;
+    border: 2px solid #00cbf8;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-cart:hover{
+    background-color: #cbf5ff;
+}
+.btn-cart img{
+    width: 24px;
+    height: 24px;
+    margin: 0;
+}
+.ver-mais{
+    height: 165px;
+    display: flex;
+    justify-content: center;
+}
+.btn-ver{
+    width: 139px;
+    height: 40px;
+    background-color: #2a3990;
+    border: none;
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.btn-ver:hover{
+    background-color: #072b77;
 }
 .footer-gray{
     background-color: #f0f0f0;
     width: 100vw;
     height: 198px;
 }
+.footer-area{
+    display: flex;
+}
+.footer-logo h1{
+    font-size: 73px;
+    letter-spacing: -3px;
+    color: #00cbf8;
+    margin: 24px;
+    cursor: pointer;
+}
+.footer-help{
+    margin: 44px 82px;
+}
+.footer-help h4{
+    color: #00cbf8;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer-help li{
+    color: #494757;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.footer-help li:hover{
+    color: #00cbf8;
+}
+.footer-media{
+    margin: 44px 70px;
+}
+.footer-media p{
+    font-size: 20px;
+    color: #00cbf8;
+    font-weight: bold;
+}
 .footer-white{
     height: 114px;
+}
+.footer-cop p{
+    font-size: 12px;
 }

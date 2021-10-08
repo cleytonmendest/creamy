@@ -32,6 +32,14 @@
     margin:0 5px;
     font-weight: bold;
 }
+#menu{
+    background-color: #FFF;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 .menu-area{
     height: 100px;
     display: flex;
@@ -76,13 +84,14 @@
     padding-top: 5px ;
 }
 .menu-area-user .search{
-    visibility: hidden;
-    width: 240px;
+    opacity: 0;
+    width: 225px;
     border: none;
     border-bottom: 1px solid #3e4457;
     padding-bottom: 8px;
-    transition-duration: .6s;
-    transition-timing-function: ease-out;
+    transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
 }
 .menu-area-user .search::placeholder{
     color: #a1a1a1;
@@ -90,8 +99,16 @@
     padding-bottom: 5px;
 }
 .search.active {
-    visibility: visible;
+    opacity: 1;
+    transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
 }
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
 .menu-area-user img{
     width: 25px;
     margin-right: 23px;

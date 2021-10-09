@@ -13,6 +13,7 @@ document.addEventListener('click', (e) => {
     }
 })
 
+// sticky menu
 const menu = document.querySelector('#menu');
 const sticky = menu.offsetTop;
 

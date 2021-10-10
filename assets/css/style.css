@@ -14,7 +14,6 @@
     margin: 0 auto;
 }
 .cart{
-    display: none;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.0);
     transition: 0.3s ease;
@@ -31,13 +30,24 @@
     -moz-transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
 }
+.cart-area{
+    position: absolute;
+    right: -500px;
+    transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+}
 .cart.active .cart-area{
     width: 300px;
     height: inherit;
     background-color: #FFF;
     position: absolute;
-    right: 0;
+    right: 0px;
+    transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
 }
+
 .cart-text{
     width: 300px;
     height: 100px;
@@ -55,6 +65,21 @@
     font-size: 24px;
     background-color: #FFF;
     cursor: pointer;
+    color: #494949;
+}
+.cart-prod{
+    width: inherit;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.no-prod p{
+    font-size: 16px;
+    color: #494949;
+}
+.cart-prod.w-prod .no-prod{
+    display: none;
 }
 .top {
     background-color: #c4c4c4;
@@ -85,6 +110,7 @@
     transition: 0.3s ease;
     -moz-transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
+    overflow-y: hidden;
 }
 .sticky{
     position: fixed;

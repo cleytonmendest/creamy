@@ -154,6 +154,7 @@
     border-radius: 20px;
     font-size: 17px;
     font-weight: bold;
+    cursor: pointer;
 }
 .top {
     background-color: #c4c4c4;

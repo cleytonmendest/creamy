@@ -79,7 +79,6 @@ function verifyInput(){
         console.log("oi")
         if(prod[i].classList.contains("active") && parseInt(qtd[i].value) === 0){
             prod[i].classList.remove("active");
-            console.log("oi");
             calcule(i);
         }
         if(prod[i].classList.contains("active")){

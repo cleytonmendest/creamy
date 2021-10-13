@@ -39,31 +39,49 @@ document.addEventListener('click', (e) => {
             cart.classList.add("active");
         }
     }
+    if(el.classList.contains("close-card")) card.classList.remove("active");
 })
 
+const card = c('.card');
 function bProd1(){
     qt1.value = 1;
     cartP.classList.add("w-prod")
     cartP.childNodes[3].classList.add("active");
     verifyInput();
+    card.classList.add("active");
+    setTimeout(()=>{
+        card.classList.remove("active");
+    }, 3000);
 }
 function bProd2(){
     qt2.value = 1;
     cartP.classList.add("w-prod")
     cartP.childNodes[5].classList.add("active");
     verifyInput();
+    card.classList.add("active");
+    setTimeout(()=>{
+        card.classList.remove("active");
+    }, 3000);
 }
 function bProd3(){
     qt3.value = 1;
     cartP.classList.add("w-prod")
     cartP.childNodes[7].classList.add("active");
     verifyInput();
+    card.classList.add("active");
+    setTimeout(()=>{
+        card.classList.remove("active");
+    }, 3000);
 }
 function bProd4(){
     qt4.value = 1;
     cartP.classList.add("w-prod")
     cartP.childNodes[9].classList.add("active");
     verifyInput();
+    card.classList.add("active");
+    setTimeout(()=>{
+        card.classList.remove("active");
+    }, 3000);
 }
 
 const prod = cs('.cart-w-prod');
